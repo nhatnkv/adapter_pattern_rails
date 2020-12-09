@@ -1,4 +1,4 @@
-class Dota2::BaseAdapter
+class Dota2::HeroesAdaptee
   def execute_request request
     RestClient::Request.execute(method: request.method,
                                 url: 'https://api.opendota.com/api' + request.uri)

@@ -1,4 +1,4 @@
-class Dota2::HeroesAdapter < Dota2::BaseAdapter
+class Dota2::HeroesAdapter < Dota2::HeroesAdaptee
   def execute
     ::Dota2::Deserializers::CommonInfo.new serializer_params
   end
